@@ -16,4 +16,3 @@ _putchar(a[i][n]);
 _putchar('\n');
 }
 }
-
