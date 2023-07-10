@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _strdup - Entry point
- * @str: input
- * Retrn: Always 0
+ * _strdup - Duplicate a string
+ * @str: input string to be duplicated
+ * Retrn:i On success, returns a pointer to the newly
+ * allocated duplicated string.
+ * On failure or if str is NULL, returns NULL
 */
 char *_strdup(char *str)
 {
