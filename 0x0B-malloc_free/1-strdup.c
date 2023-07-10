@@ -3,9 +3,8 @@
 /**
  * _strdup - Duplicate a string
  * @str: input string to be duplicated
- * Retrn:i On success, returns a pointer to the newly
- * allocated duplicated string.
- * On failure or if str is NULL, returns NULL
+ * Return: On success, returns a pointer
+ * to the newly allocated duplicated string.
 */
 char *_strdup(char *str)
 {
