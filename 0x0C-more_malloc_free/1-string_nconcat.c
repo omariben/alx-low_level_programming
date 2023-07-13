@@ -4,12 +4,14 @@
 #include <string.h>
 
 /**
- * string_nconcat - Concatenates two strings
- taking at most n bytes from s2
- * @s1: first string
- * @s2: second string
- * @n: number of bytes in s2
- * return: pointer to newly allocated space in memory
+ * string_nconcat - Concatenates two strings, taking at most n bytes from s2
+ * @s1: First string
+ * @s2: Second string
+ * @n: Maximum number of bytes to concatenate from s2
+ *
+ * Return: Pointer to the concatenated string (s1 followed by at most n bytes
+ *         of s2). The returned pointer should be freed when no longer needed.
+ *         If allocation fails, returns NULL.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
