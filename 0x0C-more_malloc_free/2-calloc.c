@@ -10,18 +10,20 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *memory;
+int i = 0, l = 0;
+char *p;
 
 if (nmemb == 0 || size == 0)
-{
+
 return (NULL);
-}
-memory = malloc(nmemb * size);
-{
+l = nmemb * size;
+p = malloc(l);
+if (p == NULL)
 return (NULL);
-}
-memset(memory, 0, nmemb * size);
+while (i < l)
 {
-return (memory);
+p[i] = 0;
+i++;
 }
+return (p);
 }
