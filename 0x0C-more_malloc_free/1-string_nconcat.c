@@ -30,7 +30,7 @@ if (n >= k)
 l = i + k;
 else
 l = i + n;
-str = malloc(sizeof(char) * l + n);
+str = malloc(sizeof(char) *(l + 1));
 if (str == NULL)
 return (NULL);
 k = 0;
